@@ -1,0 +1,26 @@
+branch만드는 법
+git branch -a : 현재 로컬과 원격(github)에 어떤 branch가 있는지 모두 알려줌
+                기본적으로 main branch가 있다.
+
+git branch branch_name : branch_name이라는 branch 생성됨
+
+git switch branch_name : 해당 branch로 이동함
+
+작업 수행~~
+
+git switch main : main으로 이동함
+
+git merge branch_name : branch_name에서 수정된 내용을 main에서 비교하여 수정함 만약 같은 줄 내용이 두 쪽에서
+                        수정되어 있으면 conflict가 발생하여 merge에서 오류가 난다. 이때 수동으로 내용을 바꿔주고 commit해야함
+
+
+근데 새로 생성한 branch에서 내용을 수정하는 것에서 그치지 않고 origin(github)에 commit해주면
+main으로 와서 merge해준 뒤 main에서 origin(github)으로 commit할 때 error가 발생한다. 
+
+이 경우는 pull origin main을 한 뒤 commit해주어야 한다.
+
+branch 삭제하는 법
+로컬의 경우(vscode 내에서) : git -d branch_name
+원격의 경우(github 내에서) : git push origin --delete branch_name
+
+README.md 파일 작성법
