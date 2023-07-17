@@ -14,11 +14,11 @@ print('%s의 나이는 %d입니다. ' %(name,age))
 '''
 
 
-'''
-name = '박민욱'; score = 76.521
 
-print('{:>5}의 성적은{:.2f}입니다. '.format(name,score))
-'''
+# name = '박민욱'; score = 76.521
+
+# print('{:>5}의 성적은{:.2f}입니다. '.format(name,score))
+
 
 '''
 name = []
@@ -64,16 +64,16 @@ print(b)
 
 # say = "\"Python is very easy.\" he says." # \사용하여 큰 따옴표 문자열 포함시키기
 
-name_score = [["박민욱",85],["홍길동",75]]
-name=[]
-score =[]
+# name_score = [["박민욱",85],["홍길동",75]]
+# name=[]
+# score =[]
 
-for i,j in name_score :
-    name.append(i)
-    score.append(j)
+# for i,j in name_score :
+#     name.append(i)
+#     score.append(j)
     
 
-for i in range(len(name)):
-    print(name[i],score[i])
+# for i in range(len(name)):
+#     print(name[i],score[i])
     
 
