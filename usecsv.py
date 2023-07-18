@@ -1,7 +1,7 @@
 import csv,re,os
 
 def opencsv(filename):
-    # newline = ''필요한가????????????★
+    # newline = ''필요한가????????????★ => ans) 읽어올 때는 필요하지 않다!!
     with open(filename,'r',encoding='cp949',newline='') as f: # 파일을 읽기/쓰기 형태로 f로 연다(가져온다.)
         reader = csv.reader(f) # f를 읽는다
         output= []
@@ -19,9 +19,11 @@ def writecsv(filename,data):
         
 def switch(listname):
     for i in listname:
-        for j in i:
+        for j in i[3:8]:
             try:
-                i[i.index(j)] = (float)(re.sub(',','',j))
+                i[i.index(j)] = float(re.sub(',','',j))
+                if j=='':
+                    i[i.index(j)] = float(0)
             except:
                 pass
     return listname
