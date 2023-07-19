@@ -112,6 +112,12 @@ print(result)
 * 리스트 내포(comprehension)★
     * 리스트 안에서 for문 사용
 
+
+### while문
+* while(조건문):
+
+    * while(1(무한반복))
+
     
 ## 함수
 * lambda
