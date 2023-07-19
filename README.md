@@ -83,6 +83,25 @@ c = {'park':[93,88,72],'kim':[80,74,69],'hong':[99,100,66]} # value값에 리스
 
 
 ## if문
+* X in s : s안에 X가 있으면 참, 없으면 거짓
+* X not in s : s안에 X가 없으면 참, 있으면 거짓
+
+* 한 줄 if문 사용 예제
+ ```py
+#1
+# score = int(input('점수는 : '))
+# if score >=80:
+#     print('합격')
+# else:
+#     print('불합격')
+
+# 한 줄 if문으로 변경
+score = int(input('점수는 : '))
+# print('합격') if score>=80 else print('불합격') 
+result = '합격' if score>=80 else '불합격'
+
+print(result)
+```
 
 
 ## 반복문(for문/while문)
