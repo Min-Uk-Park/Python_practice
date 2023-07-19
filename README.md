@@ -105,9 +105,14 @@ print(result)
 
 
 ## 반복문(for문/while문)
+### for문 
 
+* **range(시작:끝:증감)** 을 사용한 반복문
+    * 시작은 생략하면 0, 끝((ex)len(리스트))
+* 리스트 내포(comprehension)★
+    * 리스트 안에서 for문 사용
 
-
+    
 ## 함수
 * lambda
 
