@@ -18,6 +18,6 @@ from django.urls import path
 import weatherfind.views
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('home',weatherfind.views.home,name='home')
 ]

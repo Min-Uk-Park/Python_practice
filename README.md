@@ -9,8 +9,7 @@
 
 * 문자열
     * 작은 따움표로 묶어준다. 'good \n morning' 
-    > good
-
+    > good\
     morning
 
     * 순문자열의 경우 -> r'good \n morning'과 같이 r을 써준다.
@@ -120,6 +119,67 @@ print(result)
 
     
 ## 함수
-* lambda
+* 함수 작성의 필요성 : 
+    * 반복해서 코딩해야 하는 부분을 함수로 만들어 호출한다.
+    * 흐름을 알아보기 쉽게 하기 위해서이다.
+
+* 함수 구조
+```py
+def funtion_name(매개변수): # 매개변수 : 값을 전달받는 변수
+    <처리할 문장1>
+    <처리할 문장2>
+
+    return 반환값 # 반환하지 않아도 된다.
+```
+
+* 입력값(매개변수)과 결과값(반환값)에 따른 함수의 형태
+> 단!! 입력값 != 매개변수★
+
+
+    * 1. 입력값 o, 반환값 o 
+    ```py
+    def caculate(x,y):
+        sum = x + y
+        mul = x * y
+
+        return sum,mul # 반환값 : sum,mul
+
+    a,b = input('연살할 값 두 개를 입력하세요. ').split()
+    sum,mul = caculate(a,b) # 입력값 : a,b
+    ```
+
+
+    * 2. 입력값 x, 반환값 o
+    ```py
+    def string():
+        hello = '안녕하세요!!'
+
+        return hello # 반환값 : hello
+    
+    hi = string() # 입력값 : x
+    print(hi) # 안녕하세요!!
+    ```
+    
+
+    * 3. 입력값 o, 반환값 x
+    ```py
+    def my_data(name,age,major):
+        print(f'{name}의 나이는 {age}이고 전공은 {major}입니다. ')
+
+    a = 'parkminuk'
+    b = 23
+    c = 'datacomunication'
+
+    my_data(a,b,c) # 입력값 : a,b,c
+    ```
+
+    * 4. 입력값 x, 반환값 x
+    ```py
+    def direct():
+        print('입력값이 없고 반환값도 없습니다. ')
+
+    direct()
+    ```
+    
 
 
