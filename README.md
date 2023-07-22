@@ -181,5 +181,12 @@ def funtion_name(매개변수): # 매개변수 : 값을 전달받는 변수
     direct()
     ```
     
-
+## lambda 함수
+* 한 줄로 된 함수
+* 함수 구조
+```py
+add = lambda a,b:a+b # add(함수명) = lambda a,b(매개변수):a+b(반환값)
+sum = add(5,4)
+print(sum)
+```
 
