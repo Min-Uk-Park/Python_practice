@@ -19,7 +19,9 @@ import weatherfind.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('home',weatherfind.views.home,name='home')
-    path('home/',include('weatherfind.url'))
-]
+    # path('home',weatherfind.views.home,name='home') 
+    path('home/',include('weatherfind.url')), # 위와 같은 코드이다.
+    path('polls/',include('polls.url')),
+    
+] 
 
