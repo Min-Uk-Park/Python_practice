@@ -20,6 +20,6 @@ import weatherfind.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('home',weatherfind.views.home,name='home')
-    path('home/',include('weatherfind.url')),
+    path('home/',include('weatherfind.url'))
 ]
 
